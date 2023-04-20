@@ -1,4 +1,4 @@
-# Datensammlung
+# Datenzentrale
 
 Hier können Zentral alle Daten für Bad Belzig gesammelt und nachvollziehbar abgelegt und verwaltet werden.
 
