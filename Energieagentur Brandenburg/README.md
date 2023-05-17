@@ -4,11 +4,6 @@ Hier gibt es die Daten für Bad Belzig von der Energieagentur Brandenburg zu fin
 
 ## Datenimport
 
-CSV-Struktur:
-
-- per Semikolon getrennt, UTF-8, mit Headerzeile
-- Beispiel: jahr;schluessel;typ;gemeinde;amt_id;amt;landkreis_id;landkreis;region_id;region;einwohner_gesamt_anzahl;
-
 Dateinamen müssen wie folgt lauten:
 
 - energiesteckbrief_daten_komplett.csv
@@ -16,3 +11,8 @@ Dateinamen müssen wie folgt lauten:
 - strom-_und_waermeerzeugung_ee_komplett__zeitreihe_co2__summe.csv
 
 Diese können mit der Zeit immer wieder überschrieben werden mit neuen Inhalten. Nach Aktualisierung dieser Dateien wird automatisch ein Flow in Node-RED für den Import gestartet.
+
+Erwartete CSV-Struktur der Dateien:
+
+- per Semikolon getrennt, mit Headerzeile
+- Beispiel: jahr;schluessel;typ;gemeinde;amt_id;amt;landkreis_id;landkreis;region_id;region;einwohner_gesamt_anzahl;
