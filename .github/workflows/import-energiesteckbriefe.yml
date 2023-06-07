@@ -31,7 +31,7 @@ jobs:
             );
 
             if (files.length) {
-              return { filenames: files.map(file => file.filename.split('/').pop().split('.')[0]) };
+              return { filenames: files.map(file => file.filename.split('/').pop().split('.csv')[0]) };
             }
       - name: Trigger HTTP request
         uses: fjogeleit/http-request-action@v1
