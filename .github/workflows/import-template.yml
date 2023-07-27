@@ -1,0 +1,46 @@
+# Use this template to build your own CSV-to-NodeRED-importer
+# Change all REPLACE_ME as commented
+
+name: Automated Node-RED flow trigger for imports
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  REPLACE_ME:                    # Set an unique name for the importer 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Get list of changed files
+        uses: actions/github-script@v4
+        id: get-changed-files
+        with:
+          script: |
+            const compareCommits = await github.repos.compareCommits({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              base: context.payload.before,
+              head: context.payload.after
+            });
+            const folder = 'REPLACE_ME/';                                     # Chose directory to import from
+            const files = compareCommits.data.files.filter(
+              file => file.filename.startsWith(folder) && !file.filename.endsWith('README.md')
+            );
+
+            if (files.length) {
+              return { filenames: files.map(file => file.filename.split('/').pop().split('.csv')[0]) };
+            }
+      - name: Trigger HTTP request
+        uses: fjogeleit/http-request-action@v1
+        if: steps.get-changed-files.outputs.result != ''
+        with:
+          url: ${{ secrets.NODE_RED_URL }}/REPLACE_ME                           # Set URL for Node-RED Import Flow
+          method: 'POST'
+          customHeaders: '{"Content-Type": "application/json"}'
+          data: ${{ steps.get-changed-files.outputs.result }}
