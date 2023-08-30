@@ -8,7 +8,7 @@ Der Dateiname muss wie folgt lauten:
 
 - landwirtschaftliche_betriebe_brandenburg.csv
 
-Diese Datei kann mit der Zeit immer wieder überschrieben werden mit neuen Inhalten. Nach Aktualisierung dieser Dateien wird automatisch ein Flow in Node-RED für den Import gestartet.
+Diese Datei kann mit der Zeit immer wieder überschrieben werden mit neuen Inhalten. Nach Aktualisierung dieser Datei wird automatisch ein Flow in Node-RED für den Import gestartet.
 
 Erwartete CSV-Struktur der Dateien:
 

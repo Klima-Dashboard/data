@@ -7,6 +7,6 @@ Für den Import muss die JSON-Datei aus dem ZIP-Ordner umbenannt werden:
 
 - wka.json
 
-Diese Datei kann mit der Zeit immer wieder überschrieben werden mit neuen Inhalten. Nach Aktualisierung dieser Dateien wird automatisch ein Flow in Node-RED für den Import gestartet. 
+Diese Datei kann mit der Zeit immer wieder überschrieben werden mit neuen Inhalten. Nach Aktualisierung dieser Datei wird automatisch ein Flow in Node-RED für den Import gestartet.
 
-Die Struktur der JSON-Datei darf sich nicht verändern, andernfalls könnte der Import scheitern. 
+Die Struktur der JSON-Datei darf sich nicht verändern, andernfalls könnte der Import scheitern.
