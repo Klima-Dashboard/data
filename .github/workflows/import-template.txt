@@ -1,5 +1,6 @@
 # Use this template to build your own CSV-to-NodeRED-importer
 # Change all REPLACE_ME as commented
+# Change filename according to existing files in the repository
 
 name: Automated Node-RED flow trigger for imports
 
@@ -12,7 +13,7 @@ on:
       - main
 
 jobs:
-  REPLACE_ME:                    # Set an unique name for the importer 
+  REPLACE_ME:                    # Set an unique name for the importer
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
