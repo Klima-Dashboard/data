@@ -4,13 +4,15 @@ Forst Brandenburg gibt einen jährlichen "Waldzustandsbericht" als PDF heraus. A
 
 ## Datenimport
 
-Der Dateiname muss wie folgt lauten:
+Die Dateinamen müssen wie folgt lauten:
 
-- waldzustandsbericht.csv
+- waldzustandsbericht-kronenverlichtung.csv
+- waldzustandsbericht-schadstufen.csv
 
-Diese Datei kann mit der Zeit immer wieder überschrieben werden mit neuen Inhalten. Nach Aktualisierung dieser Datei wird automatisch ein Flow in Node-RED für den Import gestartet.
+Diese können mit der Zeit immer wieder überschrieben werden mit neuen Inhalten. Nach Aktualisierung dieser Dateien wird automatisch ein Flow in Node-RED für den Import gestartet.
 
 Erwartete CSV-Struktur der Dateien:
 
 - per Semikolon getrennt, mit Headerzeile
-- Beispiel: Jahr;Baumart;Schadstufe 0;Schadstufe 1;Schadstufe 2-4
+- Beispiel Kronenverlichtung: Jahr;Kronenverlichtung
+- Beispiel Schadstufen: Jahr;Baumart;Schadstufe 0;Schadstufe 1;Schadstufe 2-4
