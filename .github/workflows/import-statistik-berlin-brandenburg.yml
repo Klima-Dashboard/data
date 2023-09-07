@@ -1,0 +1,43 @@
+name: Automated Node-RED flow trigger for imports
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  import-statistik-berlin-brandenburg:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Get list of changed files
+        uses: actions/github-script@v4
+        id: get-changed-files
+        with:
+          script: |
+            const compareCommits = await github.repos.compareCommits({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              base: context.payload.before,
+              head: context.payload.after
+            });
+            const folder = 'Statistik Berlin-Brandenburg/';
+            const files = compareCommits.data.files.filter(
+              file => file.filename.startsWith(folder) && !file.filename.endsWith('README.md')
+            );
+
+            if (files.length) {
+              return { filenames: files.map(file => file.filename.split('/').pop().split('.csv')[0]) };
+            }
+      - name: Trigger HTTP request
+        uses: fjogeleit/http-request-action@v1
+        if: steps.get-changed-files.outputs.result != ''
+        with:
+          url: ${{ secrets.NODE_RED_URL }}/api/v1/import/statistik-berlin-brandenburg
+          method: 'POST'
+          customHeaders: '{"Content-Type": "application/json"}'
+          data: ${{ steps.get-changed-files.outputs.result }}
