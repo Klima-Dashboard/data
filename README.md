@@ -17,3 +17,4 @@ Neue Datenquellen können von [Nutzer:innen mit Schreibberechtigung](https://doc
 - [Landesvermessung und Geobasisinformation Brandenburg (LGB)](/Landesvermessung%20und%20Geobasisinformation%20Brandenburg)
 - [Statistik Berlin Brandenburg](/Statistik%20Berlin-Brandenburg)
 - [The Things Network](/The%20Things%20Network)
+- [openSenseMap](/openSenseMap)
