@@ -12,6 +12,7 @@ Neue Datenquellen können von [Nutzer:innen mit Schreibberechtigung](https://doc
 
 ## Aktuelle Datenübersicht
 - [Auskunftsplattform Wasser Land Brandenburg (APW)](/Auskunftsplattform%20Wasser%20Land%20Brandenburg)
+- [Deutscher Wetterdienst (DWD)](/Deutscher%20Wetterdienst)
 - [Energieagentur Brandenburg](/Energieagentur%20Brandenburg)
 - [Forst Brandenburg](/Forst%20Brandenburg)
 - [Landesvermessung und Geobasisinformation Brandenburg (LGB)](/Landesvermessung%20und%20Geobasisinformation%20Brandenburg)
