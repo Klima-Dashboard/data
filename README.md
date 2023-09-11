@@ -15,6 +15,7 @@ Neue Datenquellen können von [Nutzer:innen mit Schreibberechtigung](https://doc
 - [Energieagentur Brandenburg](/Energieagentur%20Brandenburg)
 - [Forst Brandenburg](/Forst%20Brandenburg)
 - [Landesvermessung und Geobasisinformation Brandenburg (LGB)](/Landesvermessung%20und%20Geobasisinformation%20Brandenburg)
+- [Sensor.Community](/Sensor.Community)
 - [Statistik Berlin Brandenburg](/Statistik%20Berlin-Brandenburg)
 - [The Things Network](/The%20Things%20Network)
 - [openSenseMap](/openSenseMap)
