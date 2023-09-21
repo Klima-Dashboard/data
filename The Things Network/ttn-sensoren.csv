@@ -1,6 +1,6 @@
 device_id;location;measurement;soil_type;land_use;latitude;longitude
-eui-a84041edd184a0c0;Bad Belzig;Zegg Neupflanzung;Sand;Wald;52.157144028385375;12.59251056608733
-eui-a84041674184a0e7;Bad Belzig;Zegg Kiefer;Sand;Wald;52.157080284490995;12.592768028988885
+eui-a84041edd184a0c0;Bad Belzig;Zegg Neupflanzung;Sand;Baum/Wald;52.157144028385375;12.59251056608733
+eui-a84041674184a0e7;Bad Belzig;Zegg Kiefer;Sand;Baum/Wald;52.157080284490995;12.592768028988885
 eui-8cf9572000089942;Fredersdorf;Maisacker 3-10dm;Sand;Garten/Acker;52.17423865872328;12.577118080152877
 eui-a84041e1c184a0a7;Fredersdorf;Maisacker 1dm;Sand;Garten/Acker;52.17423865872328;12.577118080152877
 eui-8cf9572000089a0c;Fredersdorf;Belziger Landschaftswiesen;Moor;Wiese/Weide;52.19451084558159;12.660952176825672
@@ -11,4 +11,4 @@ eui-a840411bf185a78a;Arensnest;Hausweide 1dm;lehmiger Sand;Weide/Wiese;52.150582
 eui-a84041d43184a0ed;Schlamau;Kartoffelacker mit Mulch;Sand;Garten/Acker;52.138218707285986;12.44150887684663
 eui-a84041fb9184a0f8;Schlamau;Kartoffelacker ohne Mulch;Sand;Garten/Acker;52.138218707285986;12.44150887684663
 eui-8cf957200008990d;Schlamau;Allmendeacker;Sand;Garten/Acker;52.13766786665334;12.442466335600434
-
+eui-a84041eb9184a0d1;Klein Glien;Coconut Eiche;Sand;Baum/Wald;52.13199617197246;12.516630701313197
