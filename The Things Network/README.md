@@ -13,4 +13,4 @@ Diese Datei kann mit der Zeit immer wieder überschrieben werden mit neuen Inhal
 Erwartete CSV-Struktur der Dateien:
 
 - per Semikolon getrennt, mit Headerzeile
-- Beispiel: device_id;measurement;latitude;longitude
+- Beispiel: device_id;location;measurement;soil_type;land_use;latitude;longitude
