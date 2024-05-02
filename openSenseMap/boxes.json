@@ -62,6 +62,26 @@
   {
     "box_id": "655f5b56c0b1bc0007d5c306",
     "box_name": "Lübnitz"
+  },
+  {
+    "box_id": "65e4d663cbf5700007d048db",
+    "box_name": "BB-Berlinerstr"
+  },
+  {
+    "box_id": "65e4d82acbf5700007d38194",
+    "box_name": "BB-Niemegkerstr"
+  },
+  {
+    "box_id": "65e4d9decbf5700007d6a103",
+    "box_name": "Treuenbrietzen"
+  },
+  {
+    "box_id": "65e4da9fcbf5700007d7fb36",
+    "box_name": "Ragösen-Briesnerstr"
+  },
+  {
+    "box_id": "65e4d922cbf5700007d53943",
+    "box_name": "Brück-Fontanestr"
   }
 ]
 
